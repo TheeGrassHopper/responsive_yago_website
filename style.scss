@@ -1,0 +1,496 @@
+@import url(http://fonts.googleapis.com/css?family=Merienda:400,700); /*--- Nav Font --*/
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700); /*--- Body Font --*/
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two); /*--- Heading Font --*/
+
+* {
+	margin:0;
+	border:0;
+	padding:0;
+}
+body{
+	background-color: #FEFBEF;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	height:100vh; 
+}
+h1{
+	font-family: 'Shadows Into Light Two';
+	text-align: center;
+	font-size: 175%;
+	text-transform: uppercase; ;
+	color: #78c0A8;
+	letter-spacing: 3px;
+	padding: 3% 0 3% 0;
+}
+h2, h3, h4{
+		font-family: 'Shadows Into Light Two';
+		text-align: center;
+		color: #5E412F;
+		letter-spacing: 1%;
+		text-transform:uppercase;
+}
+p{
+	padding: 2%;
+	color: #5E412F;
+	text-align: center;
+}
+img{
+	text-align: center;
+	max-height: 100%;
+	height: auto;
+}
+
+
+/*WRAPPER SECTION*/
+#wrapper {
+	margin: 0 auto;
+	max-width: 1120px;
+	background: #FEFBEF;
+	overflow: auto;
+}
+
+/*HEADER SECTION START*/
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	h2{
+		text-align: right;
+		color: #78C0A8;
+	}
+	p{
+		text-align: right;
+		color: #F07818;
+	}
+	#callout{
+		width: 100%;
+	}
+	 #logo{
+		width:100%;
+	}
+	 img{
+		width: 50%;
+	}
+}
+/*HEADER SECTION END*/
+
+// START Image SLider
+.slider {
+	max-width: 1020px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 1% 2% 5% 0 rgba(0, 0, 0, 0.07);
+	.bx-wrapper {
+		.bx-prev {
+			background: #FCEBB6 url('http://www.w3newbie.com/wp-content/uploads/left_arrow.png') no-repeat 8px 13px;
+			left: 0;
+			&:hover {
+				background: #FCEBB6 url('http://www.w3newbie.com/wp-content/uploads/left_arrow.png') no-repeat 8px 18px;
+			}
+		}
+		.bx-next {
+			background: #FCEBB6 url('http://www.w3newbie.com/wp-content/uploads/right_arrow.png') no-repeat 10px 12px;
+			right: 0;
+			&:hover {
+				background: #FCEBB6 url('http://www.w3newbie.com/wp-content/uploads/right_arrow.png') no-repeat 10px 17px;
+			}
+		}
+		.bx-controls-direction a {
+			outline: 0 none;
+			position: absolute;
+			text-indent: -9999px;
+			top: 40%;
+			height: 71px;
+			width: 40px;
+			z-index: -1;
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: all 0.7s;
+		}
+		&:hover .bx-controls-direction a {
+			z-index: 5;
+		}
+	}
+}
+.slider1 img {
+	width: 100%;
+	margin: 0 auto;
+}
+// Banner- WRapper Start
+
+.banner-wrapper{
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 0 0 3% 0;
+}
+.section_one{
+	display:flex;
+	align-content: center;
+	justify-content: space-around;
+	margin: 0 0 100px;
+	.one-third{
+		margin: 0 1% 0 1% 0;
+	
+		dt {
+			text-align:center;
+			color: #F0A830;
+			font-size: 585%;
+		}
+	}
+}
+
+.section_two{
+	display:flex;
+	margin: 30px auto;
+	.text_content{
+		width:75%;
+		display:flex;
+		flex-direction:column;
+		p{
+			text-align:left;
+		}
+	}
+	.sidebar{
+		height: 40vh;
+		img{
+			opacity: 0.7;
+		}
+	}
+}
+
+.section_three{
+	display:flex;
+	align-content: center;
+	justify-content: space-around;
+	margin: 0 0 100px;
+	width: 100%;
+	.one-third{
+		margin: 1%;
+		flex-direction:column;
+		display:flex;
+		align-content: center;
+		align-items: center;
+		width: 25%;
+		img{
+			width:100%;
+		}
+	}
+}
+.page_callout{
+	width:90%;
+	margin: 1% auto;
+	border: 1px solid #EFA831;
+	.callout_text{
+		float: left;
+	    width: 70%;
+	    font-size: 22px;
+	    font-weight: bold;
+	    margin: 0;
+	    padding: 20px 0 20px 20px;
+	    text-align: left;
+	}
+	.button_holder{
+		float:right;
+		width: 20%;
+		padding: 20px 20px 20px 0;
+		text-align:center;
+		.btn{
+			float:left;
+			border-radius: 8px;
+			color: #FEFBEF;
+			font-size:22px;
+			background: #EFA831;
+			margin: 0 20%;
+			padding: 3%;
+			font-weight:bold;
+			text-decoration:none;
+		}
+		.btn:hover{
+			background: #F07818;
+		}
+	}
+}
+
+// FOOTER Styling 
+
+footer{
+	background: #FCEBB6;
+	opacity:0.6;
+	width:100%;
+	padding:1% 0;
+	color: #5E412F;
+	overflow: auto;
+	display:flex;
+	justify-content: space-around;
+	align-content:center;
+	flex-wrap:wrap;
+	.one-third{
+		width:30%;
+		.phone{
+			color: #5E412F;
+			text-decoration:none;
+		}
+		.social{
+			list-style:none;
+			display:flex;
+			justify-content: space-around;
+			i{
+			font-size:195%;
+				&:hover{
+					color: #F07818;
+				}
+			}		
+		}
+		.google-maps{
+			position:relative;
+		 	height: 275px !important;
+			iframe{
+				display: block;
+				margin: 0 auto;
+				align-self:center;
+				padding: 3%;
+				width:100%;
+				height: 75%;
+			}
+		}
+		h3{
+			text-decoration: underline;
+		}
+	}
+}
+
+.clearfix{
+	clear: both;
+	display:inline-block;
+
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+
+/*--- Start Navigation Style --*/
+//colors
+$black_7: rgba(0, 0, 0, 0.07);
+$color_astra_approx: #fcebb6;
+$color_quincy_approx: #5e412f;
+$color_tundora_approx: #444444;
+$color_tango_approx: #f07818;
+
+//fonts
+$font_0: Merienda;
+$font_1: cursive;
+
+nav {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 3px 4px 24px 0 $black_7;
+	margin-top: 2px;
+	background: $color_astra_approx;
+	font-family: $font_0, $font_1;
+}
+.nav {
+	ul {
+		width: 100%;
+		overflow: hidden;
+		list-style: none;
+		overflow: visible;
+	}
+	a {
+		color: $color_quincy_approx;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	&.yoga {
+		.nav-toggled {
+			min-height: 36px;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 6px;
+			ul li {
+				position: relative;
+				a {
+					display: block;
+					width: 100%;
+					background-color: $color_astra_approx;
+					text-align: left;
+					padding: 10px 0 10px 15px;
+					border-bottom: 1px solid $color_tundora_approx;
+					text-align: center;
+					font-size: 16px;
+					//Instead of the line below you could use @include box-sizing($bs)
+					box-sizing: border-box;
+					&:active {
+						background-color: $color_astra_approx;
+						color: $color_quincy_approx;
+						border-top: 1px solid $color_quincy_approx;
+					}
+					&:hover {
+						background: $color_astra_approx;
+						text-decoration: none;
+						color: $color_quincy_approx;
+						border-bottom: 1px solid $color_tango_approx;
+					}
+				}
+			}
+		}
+		.nav-toggled-controls {
+			display: block;
+			height: 36px;
+			color: $color_quincy_approx;
+			text-align: left;
+			position: relative;
+			
+		}
+		.nav-toggled-title {
+			position: relative;
+			top: 9px;
+			left: 15px;
+			font-size: 16px;
+		}
+		.nav-button {
+			display: block;
+			position: absolute;
+			right: 15px;
+			top: 8px;
+			.menu {
+				text-align:right;
+				display: block;
+				margin-top: 4px;
+				height: 5px;
+				background: $color_quincy_approx;
+				width: 24px;
+			}
+		}
+		.nav-menu li {
+			&.active a {
+				color: $color_quincy_approx;
+				text-decoration: underline;
+			}
+			a:hover {
+				color: $color_quincy_approx;
+				text-decoration: underline;
+			}
+		}
+	}
+	.nav-menu {
+		text-align: center;
+		overflow: visible;
+		min-height: 56px;
+		li {
+			display: inline-block;
+			padding: 0;
+			margin: 0 !important;
+			position: relative;
+		}
+	}
+	.nav-toggled ul {
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+.navigation {
+	clear: both;
+	width: 100%;
+	position: relative;
+	.menu_icon{
+		display:none;
+	}
+}
+.nav-toggled-controls {
+	border-bottom: 0 solid $color_quincy_approx;
+}
+.nav-button:hover {
+	cursor: pointer;
+}
+body .nav .nav-menu li a {
+	display: inline-block;
+	padding: 15px 20px;
+	color: $color_quincy_approx;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 15px 30px;
+}
+.toggle-sm:after {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	font-size: 18px;
+	line-height: 25px;
+}
+#hidden-drew-credit a {
+	visibility: hidden;
+}
+/*--- End Navigation Style --*/
+
+
+/*--- media queries */
+@media screen and (max-width: 667px){
+  header{
+  	flex-direction:column-reverse;
+	align-content:center;
+	justify-content: center;
+	text-align:center;
+	h2, p{
+		text-align:center;
+	}
+  }
+  .menu_icon{
+		display: inline-block;
+	}
+	.section_one{
+		flex-direction:column;
+		.one-third{
+			dt{
+				font-size: 350%;
+			}
+			h1{
+				font-size:120%;
+			}
+		}
+	}
+	.section_two{
+		flex-direction:column;
+		.text_content{
+			width:100%;
+		}
+		.sidebar{
+			    margin: 0 auto;
+		}
+	}
+	.section_three{
+		flex-direction:column;
+		    margin: 0 0 50px;
+		.one-third{
+			width:100%;
+		}
+	}
+	.page_callout{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		.callout_text{
+			width:100%;
+			font-weight: 100;
+		}
+		.button_holder{
+			width:100%;
+			padding: 0;
+			.btn{
+				margin:5% 25%;
+				padding:1%;
+				width: 50%;
+			}
+		}
+	}
+	footer{
+		flex-direction: column;
+		.one-third{
+			width:100%;
+		}
+	}
+}
